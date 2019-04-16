@@ -1,0 +1,14 @@
+.flex (@flex) {
+  display: @flex;
+}
+
+.img-block () {
+  width: 100%;
+  display: block;
+}
+
+.media(@width, @rules) {
+  @media screen and (max-width: @width) {
+    @rules();
+  }
+}

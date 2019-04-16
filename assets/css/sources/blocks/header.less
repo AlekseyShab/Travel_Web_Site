@@ -1,0 +1,120 @@
+.header{
+  background: url('../images/back-bridge.png') no-repeat center/cover;
+  background-position:top;
+  
+
+.box-trip{
+    display: flex;
+    justify-content: center;
+    padding: 6.3rem 0 7rem 0;
+    &__trip-plane{
+      width: 20rem;
+      position: relative;
+      color:@color-white;
+      font-family: @font-trip;
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      
+      .image{
+        position: absolute;
+        right: -1rem;
+        top:-1rem;
+      }
+    }
+  }
+.slaider{
+    position: relative;
+    text-align: center;
+    &__title{
+      font-size:7.2rem;
+      color:@color-yellow;
+      font-weight: 300;
+      margin-bottom: 2.8rem;
+    }
+    &__from{
+      font-size: 2.4rem;
+      color:@color-white;
+    }
+    &__price{
+      font-size: 4.8rem;
+      color:@color-white;
+      margin-bottom: 3.3rem;
+    }
+    &__more{
+      padding-bottom: 15rem;
+    }
+    &__more:hover{
+      transform: scale(1.1);
+    }
+    &__more a{
+      color:@color-white;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      border-radius: 2.7rem;
+      padding: 1.6rem 4.6rem;
+      box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.21);
+      background-color: #cd2c2c;
+      background-image: linear-gradient(to top, rgba(153, 68, 39, 0.16) 0%, rgba(255, 255, 255, 0.16) 77%, rgba(255, 255, 255, 0.16) 100%);
+    }
+    &__arrow-left{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 3.3rem;
+      height: 3.3rem;
+      border-radius: 50%;
+      border:2px solid @color-white;
+      left:0;
+      top:30%;
+      &:hover{
+        background: @color-red;
+      }
+    }
+    &__arrow-right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 3.3rem;
+      height: 3.3rem;
+      border-radius: 50%;
+      border:2px solid @color-white;
+      right: 0;
+      top:30%;
+      &:hover{
+        background: @color-red;
+      }
+    }
+  }
+}
+.nav{
+  text-align: center;
+  background: url('../images/back-red.png') no-repeat center/cover;
+  padding: 2.1rem 0 2.5rem 0;
+  font-family: @font-nav;
+  border-radius: 0.5rem;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.21);
+  background-color: @color-red;
+  background-image: linear-gradient(to top, rgba(153, 68, 39, 0.16) 0%, rgba(255, 255, 255, 0.16) 77%, rgba(255, 255, 255, 0.16) 100%);
+  .media(880px, {
+    display: flex;
+    flex-direction: column;
+  });
+
+.link{
+    position: relative;
+    color:@color-deep-grey;
+    text-transform: uppercase;
+    font-size:1.8rem;
+    text-align: center;
+    padding: 0 5.5rem 0 5.5rem;
+      &:hover{
+        color:@color-white;
+      }
+      .media(1000px, {
+        margin:0.5rem 0;
+        border-bottom:1px dotted @color-blue;  
+      }); 
+    }
+  }

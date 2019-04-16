@@ -1,0 +1,59 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font: @font-size/1.4 'Open Sans', sans-serif;
+  color:#737272;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  max-width: 94rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h2{
+  font-size: 3rem;
+  color:@color-blue;
+  padding-bottom: 4.7rem;
+  text-transform: uppercase;
+}
+.h3{
+  font-size: 2.4rem;
+  color:@color-blue;
+  padding-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+.h4{
+  font-size: 1.9rem;
+  color:@color-blue;
+  padding-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+a{
+  text-decoration: none;
+}
+input{
+  border:0;
+  &:focus{
+    outline: none;
+  }
+}
+textarea{
+  &:focus{
+    outline: none;
+  }
+}
+p{
+  margin:0 0 2.5rem;
+}

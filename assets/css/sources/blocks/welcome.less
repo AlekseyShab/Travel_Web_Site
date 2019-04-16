@@ -1,0 +1,76 @@
+.welcome{
+    position: relative;
+    padding-left:12.7rem;
+    .media(1000px, {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left:0rem;
+      });
+    .img-text{
+        display: grid;
+        grid-template-columns: 19rem 16.9rem;
+        grid-column-gap: 1.6rem;
+
+        &__img{
+            background: url('../images/kisspeople.png') no-repeat center/cover;
+            height: 10rem; 
+        }
+    }
+.text{
+        .media(1000px, {
+            width: 40rem;
+          });
+        &__link{
+            color:#f3aa29;
+            cursor: pointer;
+        &:hover{
+            color:@color-blue;
+        }
+        }
+    }
+.img-quotes{
+        display: grid;
+        grid-template-columns: 9rem 28.9rem;
+        grid-column-gap: 1.5rem;
+        &__img{
+            background: url('../images/women.png') no-repeat center/cover;
+            background-position-y: 10%;
+            height: 9rem; 
+            }
+        &__text{
+            display: flex;
+            position: relative;
+            padding: 0 0 3rem 0; 
+            .fas{
+                color:#e4e3e3;
+                font-size: 2rem;
+            }
+            .t1{
+                padding: 0.8rem 0 0 0.4rem;
+            }
+        }
+        &__person-link{
+            position: absolute;
+            bottom: 3rem;
+            right: 0;
+            font-size:1.4rem; 
+            color:#f3aa29;
+            cursor: pointer;
+            text-transform: uppercase;
+        &:hover{
+            color:@color-blue;
+            }
+        }  
+    }
+    &__btn{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .media(1000px, {
+            left:50%;
+            
+        });
+    }
+        
+}

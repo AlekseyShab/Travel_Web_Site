@@ -1,0 +1,147 @@
+.booking-quotes{
+   display: flex;
+   .media(1000px, {
+      flex-direction: column;     
+    });
+}
+
+.booking{
+   .media(1000px, {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    });
+   &__form{
+      color: rgb(115, 114, 114);
+      line-height: 1.93;
+      width: 43.3rem;
+      .title{
+         .media(900px, {
+            text-align: center;
+        });
+      }
+   }
+   &__form{
+      .input{
+         background: #f0f3f5;
+         width: 100%;
+         height: 100%;
+         &:focus{
+         border:1px solid @color-blue;
+         }
+      }
+   } 
+}
+
+.grid-input{
+   display: grid;
+   grid-template-columns: 19.3rem 19.3rem;
+   grid-column-gap: 4.7rem;
+   grid-row-gap: 1.3rem;
+   padding-bottom: 1.4rem;
+   &__item{
+      background: #f0f3f5;
+   }
+}
+.grid-checkbox{
+   position: relative;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   padding-bottom: 2.6rem;
+   &__form{
+      position: relative;
+   }
+   &__form {
+      .input{
+         position: absolute;
+         opacity: 0;
+         z-index: -1;
+      }
+   }
+   &__form label{
+      padding:0 0 0 2.8rem;
+      display: block;
+   }
+   &__form label::before{
+      content:"";
+      position: absolute;
+      width: 1.8rem;
+      height: 1.8rem;
+      top:50%;
+      transform: translateY(-50%);
+      left:0;
+      background: url('../images/circle.png') no-repeat center/contain; 
+   }
+   &__form input:checked + label::before{
+      background: url('../images/check.png') no-repeat center/contain; 
+   }
+}
+.grid-count{
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-row-gap: 1.4rem;
+   grid-column-gap: 4.7rem;
+   padding-bottom: 2.1rem;
+   &__count{
+      height: 3rem;
+      display:flex;
+      justify-content: space-between;
+   }
+   .input{
+      background: #f0f3f5;
+         width: 100%;
+         height: 100%;
+   }
+}
+.grid-calendar{
+   display: grid;
+   grid-template-columns: auto;
+   grid-row-gap: 1.4rem;
+   padding-bottom: 1.1rem;
+   &__input{
+      display: grid;
+      grid-template-columns: 6.6rem 33.6rem;
+      grid-column-gap: 3rem;
+      position: relative;
+      width: 42.3rem;
+   }
+
+   &__input::after{
+      content:"";
+      position: absolute;
+      right: 2.3rem;
+      top:50%;
+      transform: translateY(-50%);
+      width: 1.9rem;
+      height: 1.9rem;
+      background: url('../images/calendar.png') no-repeat center/contain; 
+   }
+
+}
+.textarea{
+   padding:2.1rem 0 3rem 0;
+   &__content{
+      background:#f0f3f5;
+      border:0;
+      color:rgb(115, 114, 114);
+      padding:1.6rem 0 0 1.3rem;
+      width: 100%;
+      &:focus{
+         border:1px solid @color-blue;
+      } 
+   }
+      
+}
+
+.btn-form{
+   text-align: center;
+   padding: 0.9rem 2.1rem;
+   background: #e5e5e5;
+   color:#737272;
+   border-radius: 1.2rem;
+   border:0;
+   cursor: pointer;
+   &:hover{
+      transform: scale(1.1);
+   }
+}

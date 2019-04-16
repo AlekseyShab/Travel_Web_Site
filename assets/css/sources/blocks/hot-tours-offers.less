@@ -1,0 +1,59 @@
+.offers-hot-tours{
+    display: flex;
+    position: relative;
+    top:10rem;
+    justify-content: flex-start;
+    padding-bottom: 22rem;
+    flex-wrap: wrap;
+    .media(700px, {
+        display: flex;
+        flex-direction: column;
+      });
+    &__article{
+        width: 30%;
+        height: 36.4rem;
+        text-align: center;
+        margin:0 1rem;
+        color:@color-white;
+        padding:14.5rem 0 9rem 0;
+        text-transform: uppercase;
+        margin-top:2rem;
+
+        .media(700px, {
+           width: 100%;
+          });
+.content{
+            text-align: center;
+           
+            &__title{
+                font-size: 3rem;
+            }
+            &__from{
+                font-size: 1.4rem;
+            }
+            &__price{
+                font-size: 2.4rem;
+                padding-bottom: 2.5rem;
+            }
+            &__more{
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 12.2rem;
+                padding:1rem 1.7rem;
+                color:@color-red;
+                background: @color-white;
+                border-radius: 2.7rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover{
+                    background: lighten(@color-red,30%);
+                }
+            }
+            &__more a{
+                color:@color-red
+            }
+        }
+     
+    }
+}
